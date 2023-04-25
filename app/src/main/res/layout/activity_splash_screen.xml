@@ -36,7 +36,7 @@
             android:textAllCaps="true"
             android:paddingStart="@dimen/_20sdp"
             android:paddingEnd="@dimen/_20sdp"
-            android:visibility="invisible"
+            android:visibility="visible"
             android:background="@drawable/btn_start"
             android:text="Start"/>
 
@@ -44,7 +44,7 @@
             android:id="@+id/loader"
             android:layout_width="@dimen/_20sdp"
             android:layout_height="@dimen/_20sdp"
-            android:gravity="center"
+            android:layout_gravity="center"
             android:outlineAmbientShadowColor="@color/black" />
     </FrameLayout>
 
