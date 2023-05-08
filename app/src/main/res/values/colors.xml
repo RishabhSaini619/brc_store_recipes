@@ -2,9 +2,10 @@
 <resources>
     <color name="grey_dark">#494948</color>
     <color name="grey">#696969</color>
-    <color name="grey_light">#adadad</color>
-    <color name="grey_pink">#dcd1d5</color>
+    <color name="grey_light">#CAC0C0</color>
+    <color name="grey_pink">#F4E8ED</color>
     <color name="pink">#dc6782</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="hintTextColor">#787878</color>
 </resources>
