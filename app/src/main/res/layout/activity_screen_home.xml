@@ -8,6 +8,8 @@
     android:background="@color/grey_pink"
     tools:context=".HomeScreenActivity"
     android:orientation="vertical">
+
+<!--App title-->
     
     <TextView
         android:layout_width="match_parent"
@@ -15,30 +17,59 @@
         android:text="@string/title_home"
         android:textSize="@dimen/_20ssp"
         android:textColor="@color/pink"
+        android:fontFamily="@font/gilroy_bold"
         android:padding="@dimen/_10ssp"
-        android:fontFamily="@font/gilroy_bold"/>
+        />
 
+    <!--Search Layout-->
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_40ssp"
+        android:layout_height="wrap_content"
         android:layout_margin="@dimen/_10ssp"
         app:cardCornerRadius="@dimen/_10ssp"
-        app:cardMaxElevation="@dimen/_10ssp"
-        android:layout_gravity="center">
+        app:cardMaxElevation="@dimen/_10ssp">
 
+        <!--search field layout -->
 
         <androidx.appcompat.widget.SearchView
+            android:id="@+id/field_search"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/_10ssp"
+            android:layout_margin="@dimen/_5ssp"
             android:background="@drawable/search_bg"
             android:theme="@style/ThemeOverlay.Search"
-            app:iconifiedByDefault="false"
-            app:queryHint="@string/search_hint" />
-
+            app:queryBackground="@color/transparent"
+            app:queryHint="@string/search_hint"
+            app:iconifiedByDefault="false" />
 
     </androidx.cardview.widget.CardView>
+
+    <!-- categories-->
+    
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_categories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="horizontal"
+        tools:itemCount="1"
+        tools:listitem="@layout/item_list_categories" />
+
+    <!--    category title-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gilroy_bold"
+        android:paddingStart="@dimen/_10sdp"
+        android:text="Category Title"
+        android:id="@+id/tvCategory"
+        android:textColor="@color/pink"
+        android:textSize="@dimen/_15ssp" />
+
+
+
 
 
 
