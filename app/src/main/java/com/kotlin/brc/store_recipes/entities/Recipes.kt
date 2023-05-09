@@ -11,5 +11,5 @@ data class Recipes(
         var id:Int,
 
         @ColumnInfo(name = "dishName")
-        var recipe_Name:String
+        var dishName:String
 ) : Serializable

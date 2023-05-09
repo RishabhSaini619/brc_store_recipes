@@ -1,11 +1,9 @@
 package com.kotlin.brc.store_recipes.entities.converter
 
 import androidx.room.TypeConverter
-import androidx.room.TypeConverters
-import com.codingwithme.recipeapp.entities.MealsItems
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import com.kotlin.brc.store_recipes.entities.CategoryItems
+import com.kotlin.brc.store_recipes.entities.MealsItems
 
 class MealListConverter {
     @TypeConverter

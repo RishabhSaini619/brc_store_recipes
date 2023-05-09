@@ -1,7 +1,6 @@
 package com.kotlin.brc.store_recipes.entities.converter
 
 import androidx.room.TypeConverter
-import androidx.room.TypeConverters
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import com.kotlin.brc.store_recipes.entities.CategoryItems
