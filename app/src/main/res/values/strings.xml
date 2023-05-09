@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Recipes Store</string>
     <string name="title_home">All Recipes</string>
@@ -5,4 +6,5 @@
     <string name="category_name">Category Name</string>
     <string name="start">Start</string>
     <string name="splash">Splash Screen Image</string>
+    <string name="category_title">Category Title</string>
 </resources>

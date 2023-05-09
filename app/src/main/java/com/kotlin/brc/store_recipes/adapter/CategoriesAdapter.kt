@@ -12,7 +12,7 @@ import com.kotlin.brc.store_recipes.entities.Recipes
 
 class CategoriesAdapter:RecyclerView.Adapter<CategoriesAdapter.RecipeViewHolder>() {
 
-    var listener: OnItemClickListener? = null
+    var listener: CategoriesAdapter.OnItemClickListener? = null
     var context: Context? = null
     var arrayListCategories = ArrayList<Recipes>()
 
@@ -37,10 +37,10 @@ class CategoriesAdapter:RecyclerView.Adapter<CategoriesAdapter.RecipeViewHolder>
 
     override fun onBindViewHolder(holder: RecipeViewHolder, position: Int) {
 
-    holder.itemView.name_category = arrayListCategories[position].dishName
-    holder.itemView.rootView.setOnClickListener {
-            listener!!.onClicked(arrayListCategories[position].strcategory)
-        }
+//    holder.itemView.name_category = arrayListCategories[position].recipe_Name
+//    holder.itemView.rootView.setOnClickListener {
+//            listener!!.onClicked(arrayListCategories[position].strcategory)
+//        }
     }
     interface OnItemClickListener{
         fun onClicked(categoryName:String)

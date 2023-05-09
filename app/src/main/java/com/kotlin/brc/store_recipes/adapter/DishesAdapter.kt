@@ -4,6 +4,7 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.AdapterView
 import androidx.recyclerview.widget.RecyclerView
 import com.kotlin.brc.store_recipes.R
 import com.kotlin.brc.store_recipes.entities.Recipes
@@ -36,11 +37,11 @@ class DishesAdapter:RecyclerView.Adapter<DishesAdapter.RecipeViewHolder>() {
 
     override fun onBindViewHolder(holder: RecipeViewHolder, position: Int) {
 
-    holder.itemView.name_category = arrayListDishes[position].dishName
+//    holder.itemView.name_category = arrayListDishes[position].recipe_Name
 
-    holder.itemView.rootView.setOnClickListener {
-            listener!!.onClicked(arrayListDishes[position].strcategory)
-        }
+//    holder.itemView.rootView.setOnClickListener {
+//            listener!!.onClicked(arrayListDishes[position].strcategory)
+//        }
     }
     interface OnItemClickListener{
         fun onClicked(categoryName:String)

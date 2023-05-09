@@ -63,7 +63,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/gilroy_bold"
         android:paddingStart="@dimen/_10sdp"
-        android:text="Category Title"
+        android:text="@string/category_title"
         android:id="@+id/tvCategory"
         android:textColor="@color/pink"
         android:textSize="@dimen/_15ssp" />
@@ -75,7 +75,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/_10sdp"
-        android:orientation="vertical"
+        android:orientation="horizontal"
         tools:itemCount="1"
         tools:listitem="@layout/item_list_dishes" />
 
