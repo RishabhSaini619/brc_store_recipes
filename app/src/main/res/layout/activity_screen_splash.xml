@@ -9,7 +9,6 @@
     tools:context=".SplashScreenActivity">
 
     <ImageView
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:src="@drawable/bg_splash"
@@ -37,7 +36,7 @@
             android:textAllCaps="true"
             android:paddingStart="@dimen/_20sdp"
             android:paddingEnd="@dimen/_20sdp"
-            android:visibility="visible"
+            android:visibility="invisible"
             android:background="@drawable/bg_btn_start"
             android:text="@string/start"/>
 
