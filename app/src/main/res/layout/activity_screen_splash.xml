@@ -9,6 +9,7 @@
     tools:context=".SplashScreenActivity">
 
     <ImageView
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:src="@drawable/bg_splash"
@@ -17,7 +18,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:contentDescription="Splash" />
+        android:contentDescription="@string/splash" />
 
     <FrameLayout
         android:layout_width="wrap_content"
@@ -29,16 +30,16 @@
         android:gravity="center">
 
         <Button
+            android:id="@+id/btn_start"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/btn_Start"
             android:textColor="@color/white"
             android:textAllCaps="true"
             android:paddingStart="@dimen/_20sdp"
             android:paddingEnd="@dimen/_20sdp"
             android:visibility="visible"
-            android:background="@drawable/btn_start"
-            android:text="Start"/>
+            android:background="@drawable/bg_btn_start"
+            android:text="@string/start"/>
 
         <ProgressBar
             android:id="@+id/loader"

@@ -37,7 +37,7 @@
             android:paddingStart="30dp"
             android:paddingEnd="30dp"
             android:visibility="invisible"
-            android:background="@drawable/btn_start"
+            android:background="@drawable/bg_btn_start"
             android:text="Start"/>
 
         <ProgressBar
