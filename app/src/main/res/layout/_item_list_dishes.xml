@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    tools:context=".SplashScreenActivity">
+
+    <!--category list card -->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_240sdp"
+        android:layout_margin="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardBackgroundColor="@color/grey_light"
+        app:cardElevation="@dimen/_5sdp">
+
+        <!--category list card  layout -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--Dish image card -->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="@dimen/_200sdp"
+                android:layout_margin="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="@dimen/_5sdp">
+
+                <!--dish image-->
+
+                <ImageView
+                    android:id="@+id/img_dish"
+                    android:layout_width="match_parent"
+                    android:scaleType="centerCrop"
+                    android:layout_height="match_parent" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <!--dish title-->
+
+            <TextView
+                android:id="@+id/title_dish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dish Name"
+                android:textSize="@dimen/_15ssp"
+                android:textColor="@color/white"
+                android:maxLines="2"
+                android:fontFamily="@font/gilroy_light"
+                android:paddingStart="@dimen/_10sdp"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

@@ -16,6 +16,9 @@
         android:theme="@style/Theme.RecipesStore"
         tools:targetApi="31">
         <activity
+            android:name=".item_list_catogery"
+            android:exported="false" />
+        <activity
             android:name=".SplashScreenActivity"
             android:exported="false" />
         <activity
