@@ -4,24 +4,22 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.kotlin.brc.store_recipes.R
 import com.kotlin.brc.store_recipes.entities.Recipes
-//import kotlinx.android.synthetic.main.item_list_categories.view.*
-
 class DishesAdapter:RecyclerView.Adapter<DishesAdapter.RecipeViewHolder>() {
 
-    var listener: DishesAdapter.OnItemClickListener? = null
+    private var listener: OnItemClickListener? = null
     var context: Context? = null
-    var arrayListDishes = ArrayList<Recipes>()
+    private var arrayListDishes = ArrayList<Recipes>()
 
-    class RecipeViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+    class RecipeViewHolder(view: View) : RecyclerView.ViewHolder(view)
 
-    }
     fun setData(arrData : List<Recipes>){
         arrayListDishes = arrData as ArrayList<Recipes>
     }
-    fun setClickListener(listener1: DishesAdapter.OnItemClickListener){
+    fun setClickListener(listener1: OnItemClickListener){
         listener = listener1
     }
 
@@ -36,11 +34,11 @@ class DishesAdapter:RecyclerView.Adapter<DishesAdapter.RecipeViewHolder>() {
 
     override fun onBindViewHolder(holder: RecipeViewHolder, position: Int) {
 
-    holder.itemView.name_category = arrayListDishes[position].dishName
+    holder.itemView.findViewById<TextView>(R.id.name_dish).text = arrayListDishes[position].dishName
 
-    holder.itemView.rootView.setOnClickListener {
-            listener!!.onClicked(arrayListDishes[position].strcategory)
-        }
+//    holder.itemView.rootView.setOnClickListener {
+//            listener!!.onClicked(arrayListDishes[position].strcategory)
+//        }
     }
     interface OnItemClickListener{
         fun onClicked(categoryName:String)

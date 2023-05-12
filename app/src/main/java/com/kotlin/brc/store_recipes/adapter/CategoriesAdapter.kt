@@ -4,21 +4,19 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.AdapterView
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.kotlin.brc.store_recipes.R
 import com.kotlin.brc.store_recipes.entities.Recipes
-//import kotlinx.android.synthetic.main.item_list_categories.view.*
 
 class CategoriesAdapter:RecyclerView.Adapter<CategoriesAdapter.RecipeViewHolder>() {
 
-    var listener: OnItemClickListener? = null
+    private var listener: OnItemClickListener? = null
     var context: Context? = null
-    var arrayListCategories = ArrayList<Recipes>()
+    private var arrayListCategories = ArrayList<Recipes>()
 
-    class RecipeViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+    class RecipeViewHolder(view: View) : RecyclerView.ViewHolder(view)
 
-    }
     fun setData(arrData : List<Recipes>){
         arrayListCategories = arrData as ArrayList<Recipes>
     }
@@ -37,10 +35,11 @@ class CategoriesAdapter:RecyclerView.Adapter<CategoriesAdapter.RecipeViewHolder>
 
     override fun onBindViewHolder(holder: RecipeViewHolder, position: Int) {
 
-    holder.itemView.name_category = arrayListCategories[position].dishName
-    holder.itemView.rootView.setOnClickListener {
-            listener!!.onClicked(arrayListCategories[position].strcategory)
-        }
+    holder.itemView.findViewById<TextView>(R.id.name_category).text = arrayListCategories[position].dishName
+
+//    holder.itemView.rootView.setOnClickListener {
+//            listener!!.onClicked(arrayListCategories[position].strcategory)
+//        }
     }
     interface OnItemClickListener{
         fun onClicked(categoryName:String)

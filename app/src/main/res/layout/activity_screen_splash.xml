@@ -36,11 +36,12 @@
             android:textAllCaps="true"
             android:paddingStart="@dimen/_20sdp"
             android:paddingEnd="@dimen/_20sdp"
-            android:visibility="invisible"
+            android:visibility="visible"
             android:background="@drawable/bg_btn_start"
             android:text="@string/start"/>
 
         <ProgressBar
+            android:visibility="invisible"
             android:id="@+id/loader"
             android:layout_width="@dimen/_20sdp"
             android:layout_height="@dimen/_20sdp"
