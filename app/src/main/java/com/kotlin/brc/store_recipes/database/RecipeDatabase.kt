@@ -5,9 +5,16 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.kotlin.brc.store_recipes.dao.RecipeDao
+import com.kotlin.brc.store_recipes.entities.Category
+import com.kotlin.brc.store_recipes.entities.CategoryItem
 import com.kotlin.brc.store_recipes.entities.Recipes
+import com.kotlin.brc.store_recipes.entities.converter.ConverterListCategory
 
-@Database(entities = [Recipes::class], version = 1, exportSchema = false)
+@Database(
+    entities = [Recipes::class, Category::class, CategoryItem::class, ConverterListCategory ::class],
+    version = 1,
+    exportSchema = false
+)
 
 
 abstract class RecipeDatabase : RoomDatabase(

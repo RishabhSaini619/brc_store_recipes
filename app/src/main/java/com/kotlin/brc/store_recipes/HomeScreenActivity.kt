@@ -34,10 +34,18 @@ class HomeScreenActivity : AppCompatActivity() {
 
         categoriesAdapter.setData(arrayListCategories)
 
+        arrayListDishes.add(Recipes(4,"bee7f"))
+        arrayListDishes.add(Recipes(4,"bee7f"))
+        arrayListDishes.add(Recipes(4,"bee7f"))
+        arrayListDishes.add(Recipes(1,"bee789f"))
         arrayListDishes.add(Recipes(1,"bee789f"))
         arrayListDishes.add(Recipes(2,"bee879f"))
+        arrayListDishes.add(Recipes(2,"bee879f"))
         arrayListDishes.add(Recipes(3,"bee546f"))
-        arrayListDishes.add(Recipes(4,"bee7f"))
+        arrayListDishes.add(Recipes(3,"bee546f"))
+        arrayListDishes.add(Recipes(3,"bee546f"))
+        arrayListDishes.add(Recipes(1,"bee789f"))
+        arrayListDishes.add(Recipes(2,"bee879f"))
 
         dishesAdapter.setData(arrayListDishes)
 

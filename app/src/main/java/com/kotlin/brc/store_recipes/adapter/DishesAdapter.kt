@@ -24,6 +24,7 @@ class DishesAdapter:RecyclerView.Adapter<DishesAdapter.RecipeViewHolder>() {
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecipeViewHolder {
+
         context = parent.context
         return RecipeViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_list_dishes,parent,false))
     }
